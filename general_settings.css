@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    scroll-behavior: smooth;
+    --main-brand-color: #CF0A0A; 
+    --primary-color: #EEEEEE;
+    --secondary-color: #B3B4B6;
+    --text-color: #000;
+    --secondary-text-color: #dc5f00;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    min-height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.lang-content {
+    display: none;
+  }
+  
+.de #deContent,
+.en #enContent {
+    display: block;
+  }
+
+#en:checked ~ .en #enContent,
+#de:checked ~ .de #deContent {
+  display: block;
+}
+
+h1 {
+    font-size: 500%;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--main-brand-color)
+}
+
+.subheading {
+    color: var(--primary-color)
+}
+
+h2 {
+    font-size: 250%;
+    font-weight: 600;
+    line-height: 100%;
+    color: var(--text-color);
+    margin-left: 10%;
+    padding-top: 5vh;
+}
+
+h3 {
+    font-size: 250%;
+    font-weight: 600;
+    line-height: 100%;
+    color: var(--primary-color);
+    margin-bottom: 5vh;
+}

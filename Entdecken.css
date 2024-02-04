@@ -1,0 +1,35 @@
+.model {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    width: 75vw;
+    height: 95vh;
+}
+
+.Technische_Daten {
+    height: 100vh;
+    background-image: url(images/Bsp_4.png);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.Technische_Daten_container {
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 30vw;
+    height: 100vh;
+    padding: 5vh;
+}
+
+.Technische_Daten_container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.Technische_Daten_container li {
+    font-size: 175%;
+    color: white;
+}

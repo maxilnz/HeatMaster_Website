@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Name und Icon des Tabs -->
+        <title>HeatMaster - Mehr als nur heiße Luft</title>
+        <link rel="shortcut icon" href="favicon_io/favicon.ico">
+
+        <!-- CSS Dateien -->
+        <link rel="stylesheet" href="general_settings.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="Entdecken.css">
+
+        <!-- JS Dateien -->
+        <script src="header.js" defer></script>
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <header>
+            <div class="banner">
+
+                <!-- Logo und Überschrift -->
+                <div class="logo_and_main_heading">
+                    <a href="" onclick="window.location.reload()"><img class="logo" src="images/Bsp_Logo.jpeg" alt="HeatMaster_Logo"></a>
+                    <div>
+                        <h1>HeatMaster</h1>
+                        <p class="subheading lang-content de">Mehr als nur heiße Luft</p>
+                        <p class="subheading lang-content en">More than just hot air</p>
+                    </div>
+                </div>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li class="lang-content de"><a href="#Entdecken_section">Entdecken</a></li>
+                        <li class="lang-content de"><a href="#Entstehungsgeschichte_section">Entstehungsgeschichte</a></li>
+                        <li class="lang-content de"><a href="">Service</a></li>
+                        <li class="lang-content de"><a href="">Kontakt</a></li>
+                        <li class="lang-content en"><a href="#Entdecken_section">Discover</a></li>
+                        <li class="lang-content en"><a href="#Entstehungsgeschichte_section">Story</a></li>
+                        <li class="lang-content en"><a href="">Service</a></li>
+                        <li class="lang-content en"><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Sprachauswahl -->
+                <div class="language_selector">
+                    <input type="radio" name="language" class="language_radio" id="de" checked>
+                    <label for="de" class="language_label" onclick="changeLanguage('de')">DE</label>
+                    <input type="radio" name="language" class="language_radio" id="en">
+                    <label for="en" class="language_label" onclick="changeLanguage('en')">EN</label>
+                </div>
+            </div>
+
+            <!-- Pfeil nach unten -->
+            <div class="arrow_down">
+                <a href="#Entdecken_section"><span class="material-symbols-outlined">keyboard_arrow_down</span></a>
+            </div>
+            
+            <!-- Image Slider -->
+            <div class="slider">
+                <div class="slide" id="slide1"></div>
+                <div class="slide" id="slide2"></div>
+                <div class="slide" id="slide3"></div>
+                <div class="slide" id="slide4"></div>
+                <div class="slide" id="slide5"></div>
+              </div>
+        </header>
+
+        <main>
+            <section id="Entdecken_section">
+                <div>
+                    <h2 class="lang-content de">HeatMaster entdecken</h2>
+                    <h2 class="lang-content en">Discover HeatMaster</h2>
+                </div>
+                <div class="model">
+                    <iframe src="https://maxilnz.github.io/3D-Test_2/" frameborder="0" class="lang-content de"></iframe>
+                    <iframe src="https://maxilnz.github.io/3D-Test/" frameborder="0" class="lang-content en"></iframe>
+                </div>
+                <div class="Technische_Daten">
+                    <div class="Technische_Daten_container">
+                        <h3 class="lang-content de">Technische Daten</h3>
+                        <h3 class="lang-content en">Specifications</h3>
+                        <ul>
+                            <li class="lang-content de">Leistung: 2 kW-Brenner</li>
+                            <li class="lang-content de">Masse: 10 kg</li>
+                            <li class="lang-content de">Material: Edelstahl</li>
+                            <li class="lang-content de">Maße: 50 x 50 x 30 cm</li>
+                            <li class="lang-content de">Gas: Propan</li>
+                            <li class="lang-content en">Performance: Burner of 2 kW</li>
+                            <li class="lang-content en">Weight: 10 kg</li>
+                            <li class="lang-content en">Material: Stainless steel</li>
+                            <li class="lang-content en">Dimensions: 50 x 50 x 30 cm</li>
+                            <li class="lang-content en">Gas: Propan</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="Entstehungsgeschichte_section">
+                <h2 class="lang-content de">Entstehungsgeschichte</h2>
+                <h2 class="lang-content en">The story of HeatMaster</h2>
+            </section>
+        </main>
+    </body>
+</html>
