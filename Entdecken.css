@@ -10,14 +10,14 @@ iframe {
 
 .Technische_Daten {
     height: 100vh;
-    background-image: url(images/Bsp_4.png);
+    background-image: url(images/Bsp_2_3.png);
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
 }
 
 .Technische_Daten_container {
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 30vw;
     height: 100vh;
     padding: 5vh;

@@ -1,0 +1,97 @@
+#Entstehungsgeschichte_section{
+    padding: 25px 25px;
+    background: 
+        url(images/Bsp_4.png) rgba(0, 0, 0, 0.65)
+        no-repeat 
+        center fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Entstehungsgeschichte_text{
+    width: 75vw;
+    max-width: 90%;
+}
+.timeline{
+    margin: auto;
+    max-width: 34.15em;
+}
+.checkpoint{
+    max-width: 34em;
+    padding: 2em 0;
+    position: relative;
+}
+.checkpoint div{
+    border: 2px solid #888;
+    border-radius: 1em;
+    padding: 1.5em;
+}
+.checkpoint:nth-child(odd){
+    border-left: 3px solid #888;
+    padding-left: 3em;
+    transform: translateX(17em);
+}
+.checkpoint:nth-child(even){
+    border-right: 3px solid #888;
+    padding-right: 3em;
+    transform: translateX(-17em);
+}
+.checkpoint:nth-child(odd)::before, .checkpoint:nth-child(even)::before{
+    content: '';
+    background: #888;
+    width: 3em;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.checkpoint:nth-child(odd)::before{
+    left: 0;
+}
+.checkpoint:nth-child(even)::before{
+    right: 0;
+}
+.checkpoint:nth-child(odd) div::before, .checkpoint:nth-child(even) div::before{
+    content: '';
+    background: #fff;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+.checkpoint:nth-child(odd) div::before{
+    left: -0.5em;
+}
+.checkpoint:nth-child(even) div::before{
+    right: -0.5em;
+}
+@media screen and (max-width: 900px){
+    .timeline{
+        width: 80vw;
+    }
+    .timeline .checkpoint{
+        width: 100%;
+        transform: none;
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+    }
+    .timeline .checkpoint::before{
+        width: 3px;
+        height: 4em;
+        top: -2em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .timeline .checkpoint div::before{
+        top: -0.5em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
