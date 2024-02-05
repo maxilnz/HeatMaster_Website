@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="Entdecken.css">
         <link rel="stylesheet" href="Entstehungsgeschichte.css">
         <link rel="stylesheet" href="Service.css">
+        <link rel="stylesheet" href="Kontakt.css">
 
         <!-- JS Dateien -->
         <script src="header.js" defer></script>
@@ -42,11 +43,11 @@
                         <li class="lang-content de"><a href="#Entdecken_section">Entdecken</a></li>
                         <li class="lang-content de"><a href="#Entstehungsgeschichte_section">Entstehungsgeschichte</a></li>
                         <li class="lang-content de"><a href="#Service_section">Service</a></li>
-                        <li class="lang-content de"><a href="">Kontakt</a></li>
+                        <li class="lang-content de"><a href="#Kontakt_section">Kontakt</a></li>
                         <li class="lang-content en"><a href="#Entdecken_section">Discover</a></li>
                         <li class="lang-content en"><a href="#Entstehungsgeschichte_section">Story</a></li>
                         <li class="lang-content en"><a href="#Service_section">Service</a></li>
-                        <li class="lang-content en"><a href="">Contact</a></li>
+                        <li class="lang-content en"><a href="#Kontakt_section">Contact</a></li>
                     </ul>
                 </nav>
 
@@ -234,6 +235,24 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section id="Kontakt_section">
+                <div class="Kontakt_container">
+                    <h2 class="lang-content de">Kontakt</h2>
+                    <h2 class="lang-content en">Contact</h2>
+                    <form class="lang-content de" action="mailto:kontakt@heatmaster.info">
+                        <label id="name-label">Name<input id="name" type="text" placeholder="Tragen Sie Ihren Namen ein" required /></label>
+                        <label id="email-label">E-Mail-Adresse<input id="email" type="email" placeholder="Tragen Sie Ihre E-Mail-Adresse ein" required /></label>
+                        <label id="textarea-label">Ihre Anfrage<textarea id="textarea" type="textarea" placeholder="Schreiben Sie hier Ihre Anfrage..."></textarea></label>
+                        <input id="submit" type="submit" value="Senden" />
+                    </form>
+                    <form class="lang-content en" action="mailto:kontakt@heatmaster.info">
+                        <label id="name-label_en">Name<input id="name_en" type="text" placeholder="Enter your name" required /></label>
+                        <label id="email-label_en">Email address<input id="email_en" type="email" placeholder="Enter your email address" required /></label>
+                        <label id="textarea-label_en">Your <textarea id="textarea_en" type="textarea" placeholder="Write your request here..."></textarea></label>
+                        <input id="submit_en" type="submit" value="Submit" />
+                    </form>
                 </div>
             </section>
         </main>
