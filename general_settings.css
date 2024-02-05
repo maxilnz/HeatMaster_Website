@@ -71,3 +71,17 @@ h3 {
     color: white;
 }
 
+
+.back_top {
+    text-decoration: none;
+}
+
+.back_top span {
+    font-size: 250%;
+    cursor: pointer;
+    color: #888;
+    position: fixed;
+    bottom: 25vh;
+    right: 2vw;
+    z-index: 100000;
+}
