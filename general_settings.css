@@ -55,21 +55,19 @@ h2 {
     font-weight: 600;
     line-height: 100%;
     color: var(--text-color);
-    margin-left: 10%;
     padding-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 h3 {
-    font-size: 250%;
-    font-weight: 600;
+    font-size: 175%;
+    font-weight: 400;
     line-height: 100%;
     color: var(--primary-color);
     margin-bottom: 5vh;
 }
 
 .Entstehungsgeschichte_heading {
-    margin: 0;
-    padding: 0;
     color: white;
 }
 

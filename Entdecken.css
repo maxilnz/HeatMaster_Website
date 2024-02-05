@@ -1,3 +1,14 @@
+#Model_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.model_container {
+    width: 75vw;
+    max-width: 90%;
+}
+
 .model {
     display: flex;
     justify-content: center;

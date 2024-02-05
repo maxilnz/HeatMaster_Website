@@ -1,15 +1,23 @@
 #Service_section {
     padding: 25px 25px;
-    background-color: var(--secondary-color);
+    background: 
+        url(images/Bsp_2_3.png) 
+        no-repeat 
+        center fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
 }
 
 .Service_container {
     width: 75vw;
     max-width: 90%;
+}
+
+.Dokumente {
+    margin-bottom: 5vh;
 }
 
 .Dokumente p {
@@ -20,7 +28,7 @@
 }
 
 .Dokumente a {
-    color: var(--text-color);
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -89,13 +97,15 @@
     color: rgba(255, 255, 255, 0.2);
     font-size: 8em;
     justify-content: flex-end;
+    padding: 4vw;
 }
 
 .FAQ .tab label h5 {
     position: relative;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--text-color);
     z-index: 10;
+    font-size: 100%;
 }
 
 /* .FAQ .tab input:checked ~ label h5{

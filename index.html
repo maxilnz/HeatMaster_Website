@@ -45,7 +45,7 @@
                         <li class="lang-content de"><a href="">Kontakt</a></li>
                         <li class="lang-content en"><a href="#Entdecken_section">Discover</a></li>
                         <li class="lang-content en"><a href="#Entstehungsgeschichte_section">Story</a></li>
-                        <li class="lang-content en"><a href="Service_section">Service</a></li>
+                        <li class="lang-content en"><a href="#Service_section">Service</a></li>
                         <li class="lang-content en"><a href="">Contact</a></li>
                     </ul>
                 </nav>
@@ -76,14 +76,16 @@
 
         <main>
             <section id="Entdecken_section">
-                <div>
-                    <h2 class="lang-content de">HeatMaster entdecken</h2>
-                    <h2 class="lang-content en">Discover HeatMaster</h2>
-                </div>
-                <div class="model">
-                    <iframe src="https://maxilnz.github.io/3D-Test_2/" frameborder="0" class="lang-content de"></iframe>
-                    <iframe src="https://maxilnz.github.io/3D-Test/" frameborder="0" class="lang-content en"></iframe>
-                </div>
+                <section id="Model_section">
+                    <div class="model_container">
+                        <h2 class="lang-content de">HeatMaster entdecken</h2>
+                        <h2 class="lang-content en">Discover HeatMaster</h2>
+                        <div class="model">
+                            <iframe src="https://maxilnz.github.io/3D-Test_2/" frameborder="0" class="lang-content de"></iframe>
+                            <iframe src="https://maxilnz.github.io/3D-Test/" frameborder="0" class="lang-content en"></iframe>
+                        </div>
+                    </div>
+                </section>
                 <div class="Technische_Daten">
                     <div class="Technische_Daten_container">
                         <h3 class="lang-content de">Technische Daten</h3>
@@ -130,7 +132,7 @@
                     <div class="checkpoint">
                         <div>
                             <h4 class="lang-content de">März 2024: Konstruktion</h4>
-                            <h4 class="lang-content en">March 2024: Projektstart</h4>
+                            <h4 class="lang-content en">March 2024: Construction</h4>
                             <p class="lang-content de">Die Konstruktion von HeatMaster wurde im März 2024 fertiggestellt. Die Priorität lag hierbei vor allem auf der Entwicklung eines qualitativ hochwertigen Geräts. Die hohen Temperaturen, die bei der Benutzung von HeatMaster auftreten, erforderten außerdem kluge Lösungsansätze und ein durchdachtes Design.</p>
                             <p class="lang-content en">HeatMaster construction was completed in March 2024. The priority here was primarily on developing a high-quality device. The high temperatures that occur when using HeatMaster also required clever solutions and a well thought-out design.</p>
                         </div>
@@ -157,9 +159,12 @@
                 <div class="Service_container">
                     <h2 class="Service_heading">Service</h2>
                     <div class="Dokumente">
-                        <h3>Dokumente</h3>
-                        <p> <a target="_blank" href="pdfs/AdA-Angebot_YM_12.2021.pdf" id="Bedienungsanleitung"> <span class="material-symbols-outlined">file_open</span> Bedienungsanleitung (138 KB)</a></p>
-                        <p> <a target="_blank" href="pdfs/AdA-Angebot_YM_12.2021.pdf" id="Datenblatt"> <span class="material-symbols-outlined">file_open</span> Datenblatt (138 KB)</a></p>
+                        <h3 class="lang-content de">Dokumente</h3>
+                        <h3 class="lang-content en">Documents</h3>
+                        <p class="lang-content de"> <a target="_blank" href="pdfs/Varianten_Skizzen.pdf" id="Bedienungsanleitung_de"> <span class="material-symbols-outlined">file_open</span> Bedienungsanleitung (138 KB)</a></p>
+                        <p class="lang-content en"> <a target="_blank" href="pdfs/Varianten_Skizzen.pdf" id="Bedienungsanleitung_en"> <span class="material-symbols-outlined">file_open</span> Manual (138 KB)</a></p>
+                        <p class="lang-content de"> <a target="_blank" href="pdfs/Varianten_Skizzen.pdf" id="Datenblatt_de"> <span class="material-symbols-outlined">file_open</span> Datenblatt (138 KB)</a></p>
+                        <p class="lang-content en"> <a target="_blank" href="pdfs/Varianten_Skizzen.pdf" id="Datenblatt_en"> <span class="material-symbols-outlined">file_open</span> Spec sheet (138 KB)</a></p>
                     </div>
                     <div class="FAQ">
                         <h3>FAQ</h3>
@@ -167,7 +172,8 @@
                             <input type="radio" name="tab" id="tab1">
                             <label for="tab1">
                                 <h4>01</h4>
-                                <h5>Was macht den HeatMaster so besonders?</h5>
+                                <h5 class="lang-content de">Was macht den HeatMaster so besonders?</h5>
+                                <h5 class="lang-content en">Why is HeatMaster so special?</h5>
                             </label>
                             <div class="answer">
                                 <p>
@@ -179,7 +185,8 @@
                             <input type="radio" name="tab" id="tab2">
                             <label for="tab2">
                                 <h4>02</h4>
-                                <h5>Kann man den HeatMaster erwerben?</h5>
+                                <h5 class="lang-content de">Kann man den HeatMaster erwerben?</h5>
+                                <h5 class="lang-content en">Can you purchase HeatMaster?</h5>
                             </label>
                             <div class="answer">
                                 <p>
@@ -191,7 +198,8 @@
                             <input type="radio" name="tab" id="tab3">
                             <label for="tab3">
                                 <h4>03</h4>
-                                <h5>Wie reinige ich den HeatMaster?</h5>
+                                <h5 class="lang-content de">Wie reinigt man den HeatMaster richtig?</h5>
+                                <h5 class="lang-content en">How do you clean HeatMaster properly?</h5>
                             </label>
                             <div class="answer">
                                 <p>
@@ -203,7 +211,8 @@
                             <input type="radio" name="tab" id="tab4">
                             <label for="tab4">
                                 <h4>04</h4>
-                                <h5>Mit welchem Gas wird der HeatMaster betrieben?</h5>
+                                <h5 class="lang-content de">Mit welchem Gas wird der HeatMaster betrieben?</h5>
+                                <h5 class="lang-content en">What gas is used for HeatMaster?</h5>
                             </label>
                             <div class="answer">
                                 <p>
@@ -215,7 +224,8 @@
                             <input type="radio" name="tab" id="tab5">
                             <label for="tab5">
                                 <h4>05</h4>
-                                <h5>Was ist beim Wechseln des Modus zu beachten?</h5>
+                                <h5 class="lang-content de">Was ist beim Wechseln des Modus zu beachten?</h5>
+                                <h5 class="lang-content en">What should you consider when changing modes?</h5>
                             </label>
                             <div class="answer">
                                 <p>
