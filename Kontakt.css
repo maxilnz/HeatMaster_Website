@@ -32,6 +32,10 @@ form {
     padding-left: 5px;
   }
 
+.Kontakt_container textarea {
+    height: 10vh;
+}
+
 input[type="submit"] {
     display: block;
     width: 60%;
