@@ -19,6 +19,9 @@ body {
 * {
     margin: 0;
     padding: 0;
+}
+
+:not(.checkpoint) {
     box-sizing: border-box;
 }
 
@@ -40,11 +43,11 @@ h1 {
     font-size: 500%;
     font-weight: 400;
     line-height: 100%;
-    color: var(--main-brand-color)
+    color: var(--main-brand-color);
 }
 
 .subheading {
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 h2 {
@@ -62,4 +65,10 @@ h3 {
     line-height: 100%;
     color: var(--primary-color);
     margin-bottom: 5vh;
+}
+
+.Entstehungsgeschichte_heading {
+    margin: 0;
+    padding: 0;
+    color: white;
 }
