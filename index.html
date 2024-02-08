@@ -24,7 +24,6 @@
 
         <!-- Icons -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>
     <body>
         <header id="header_section">
@@ -33,7 +32,7 @@
                 <!-- Logo und Überschrift -->
                 <div class="logo_and_main_heading">
                     <a href="" onclick="window.location.reload()"><img class="logo" src="images/Bsp_Logo.jpeg" alt="HeatMaster_Logo"></a>
-                    <div>
+                    <div class="main_heading">
                         <h1>HeatMaster</h1>
                         <p class="subheading lang-content de">Mehr als nur heiße Luft</p>
                         <p class="subheading lang-content en">More than just hot air</p>
@@ -42,15 +41,19 @@
 
                 <!-- Nav -->
                 <nav>
+                    <input type="radio" id="toggle_button" name="menu_control" onclick="hideArrow()">
+                    <label for="toggle_button"><span class="material-symbols-outlined">menu</span></label>
+                    <input type="radio" id="close_button" name="menu_control" onclick="showArrow()" checked>
+                    <label for="close_button"><span class="material-symbols-outlined">close</span></label>
                     <ul>
-                        <li class="lang-content de"><a href="#Entdecken_section">Entdecken</a></li>
-                        <li class="lang-content de"><a href="#Entstehungsgeschichte_section">Entstehungsgeschichte</a></li>
-                        <li class="lang-content de"><a href="#Service_section">Service</a></li>
-                        <li class="lang-content de"><a href="#Kontakt_section">Kontakt</a></li>
-                        <li class="lang-content en"><a href="#Entdecken_section">Discover</a></li>
-                        <li class="lang-content en"><a href="#Entstehungsgeschichte_section">Story</a></li>
-                        <li class="lang-content en"><a href="#Service_section">Service</a></li>
-                        <li class="lang-content en"><a href="#Kontakt_section">Contact</a></li>
+                        <li class="lang-content de"><a href="#Entdecken_section" onclick="closeNav()">Entdecken</a></li>
+                        <li class="lang-content de"><a href="#Entstehungsgeschichte_section" onclick="closeNav()">Entstehungsgeschichte</a></li>
+                        <li class="lang-content de"><a href="#Service_section" onclick="closeNav()">Service</a></li>
+                        <li class="lang-content de"><a href="#Kontakt_section" onclick="closeNav()">Kontakt</a></li>
+                        <li class="lang-content en"><a href="#Entdecken_section" onclick="closeNav()">Discover</a></li>
+                        <li class="lang-content en"><a href="#Entstehungsgeschichte_section" onclick="closeNav()">Story</a></li>
+                        <li class="lang-content en"><a href="#Service_section" onclick="closeNav()">Service</a></li>
+                        <li class="lang-content en"><a href="#Kontakt_section" onclick="closeNav()">Contact</a></li>
                     </ul>
                 </nav>
 
@@ -64,7 +67,7 @@
             </div>
 
             <!-- Pfeil nach unten -->
-            <div class="arrow_down">
+            <div class="arrow_down" id="arrow_down">
                 <a href="#Entdecken_section"><span class="material-symbols-outlined">keyboard_arrow_down</span></a>
             </div>
             
@@ -252,7 +255,7 @@
                     <form class="lang-content en" action="mailto:kontakt@heatmaster.info">
                         <label id="name-label_en">Name<input id="name_en" type="text" placeholder="Enter your name" required /></label>
                         <label id="email-label_en">Email address<input id="email_en" type="email" placeholder="Enter your email address" required /></label>
-                        <label id="textarea-label_en">Your <textarea id="textarea_en" type="textarea" placeholder="Write your request here..."></textarea></label>
+                        <label id="textarea-label_en">Your request<textarea id="textarea_en" type="textarea" placeholder="Write your request here..."></textarea></label>
                         <input id="submit_en" type="submit" value="Submit" />
                     </form>
                 </div>
