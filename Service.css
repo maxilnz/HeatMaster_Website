@@ -1,5 +1,5 @@
 #Service_section {
-    padding: 25px 25px;
+    padding: 1vw 1vw;
     background: 
         url(images/Bsp_2_3.png) 
         no-repeat 
@@ -25,6 +25,11 @@
     border-radius: 1em;
     padding: 1em;
     margin: 1em 0;
+    font-size: 1.5vw;
+}
+
+.Dokumente p span {
+    font-size: 2vw;
 }
 
 .Dokumente a {
@@ -35,7 +40,8 @@
 .FAQ {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1vw;
+    margin-bottom: 5vh;
 }
 
 .FAQ .tab {
@@ -76,8 +82,8 @@
 }
 
 .FAQ .tab label h4 {
-    width: 40px;
-    height: 40px;
+    width: 2.5vw;
+    height: 2.5vw;
     background: var(--secondary-text-color);
     display: flex;
     justify-content: center;
@@ -86,6 +92,7 @@
     font-size: 1.25em;
     border-radius: 5px;
     margin-right: 10px;
+    font-size: 1.5vw;
 }
 
 .FAQ .tab input:checked ~ label h4 {
@@ -97,7 +104,7 @@
     color: rgba(255, 255, 255, 0.2);
     font-size: 8em;
     justify-content: flex-end;
-    padding: 4vw;
+    padding: 2vw;
 }
 
 .FAQ .tab label h5 {
@@ -105,7 +112,7 @@
     font-weight: 600;
     color: var(--text-color);
     z-index: 10;
-    font-size: 100%;
+    font-size: 1vw;
 }
 
 /* .FAQ .tab input:checked ~ label h5{

@@ -51,7 +51,7 @@ h1 {
 }
 
 h2 {
-    font-size: 250%;
+    font-size: 3vw;
     font-weight: 600;
     line-height: 100%;
     color: var(--text-color);
@@ -60,7 +60,7 @@ h2 {
 }
 
 h3 {
-    font-size: 175%;
+    font-size: 2vw;
     font-weight: 400;
     line-height: 100%;
     color: var(--primary-color);
@@ -71,6 +71,10 @@ h3 {
     color: white;
 }
 
+.TechnischeDaten_heading {
+    font-size: 3vw;
+    font-weight: 500;
+}
 
 .back_top {
     text-decoration: none;
@@ -87,6 +91,10 @@ h3 {
 }
 
 #language_mobile_input_id_de, #language_mobile_input_id_en, #language_mobile_label_id_de, #language_mobile_label_en {
+    display: none;
+}
+
+.language_mobile_selector_class {
     display: none;
 }
 

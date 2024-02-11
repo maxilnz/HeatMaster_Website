@@ -1,11 +1,11 @@
 mybutton = document.getElementById("back_to_top");
-
 mybutton.style.display = "none";
 
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+    var scrollThreshold = window.innerHeight * 1;
+    if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
         mybutton.style.display = "block";
     } else {
         mybutton.style.display = "none";

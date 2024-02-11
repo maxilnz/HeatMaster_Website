@@ -1,5 +1,5 @@
 #Entstehungsgeschichte_section {
-    padding: 25px 25px;
+    padding: 1vw 1vw;
     background: 
         url(images/Bsp_Logo.jpeg) rgba(0, 0, 0, 0.65)
         no-repeat 
@@ -18,23 +18,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3vh;
-    margin-bottom: 2vh;
+    margin-bottom: 10vh;
     width: 75vw;
     max-width: 90%;
 }
 
 .Entstehungsgeschichte_container p {
     font-weight: 600;
+    font-size: 1.5vw;
+    text-align: center;
 }
 
 .timeline {
     margin: auto;
-    max-width: 34.15em;
+    /* max-width: 34.15em; */
+    max-width: 35.15vw;
 }
 
 .checkpoint {
-    max-width: 34em;
+    /* max-width: 34em; */
+    max-width: 35vw;
     padding: 2em 0;
     position: relative;
 }
@@ -43,25 +46,31 @@
     border: 2px solid #888;
     border-radius: 1em;
     padding: 1.5em;
+    font-size: 1.5vw;
 }
 
 .checkpoint:nth-child(odd) {
     border-left: 3px solid #888;
-    padding-left: 3em;
-    transform: translateX(17em);
+    /* padding-left: 3em; */
+    padding-left: 3vw;
+    /* transform: translateX(17em); */
+    transform: translateX(17.5vw);
 }
 
 .checkpoint:nth-child(even) {
     border-right: 3px solid #888;
-    padding-right: 3em;
-    transform: translateX(-17em);
+    /* padding-right: 3em; */
+    padding-right: 3vw;
+    /* transform: translateX(-17em); */
+    transform: translateX(-17.5vw);
 }
 
 .checkpoint:nth-child(odd)::before, .checkpoint:nth-child(even)::before {
     content: '';
     background: #888;
-    width: 3em;
+    /* width: 3em; >*/
     height: 2px;
+    width: 3vw;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -94,7 +103,7 @@
     right: -0.5em;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1150px) {
     .timeline {
         width: 80vw;
     }
