@@ -1,4 +1,4 @@
-changeLanguage('de')
+changeLanguage('de');
 
 function changeLanguage(language) {
     document.documentElement.lang = language;
@@ -14,10 +14,12 @@ function changeLanguage(language) {
     document.getElementById("close_button").checked = true;
 }
 
-function hideArrow() {
+function hideElements() {
   document.getElementById("arrow_down").style.display = "none";
+  document.getElementById("language_selector_mobile").style.display ="none";
 }
 
-function showArrow() {
+function showElements() {
   document.getElementById("arrow_down").style.display = "block";
+  document.getElementById("language_selector_mobile").style.display ="flex";
 }

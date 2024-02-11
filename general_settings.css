@@ -77,7 +77,7 @@ h3 {
 }
 
 .back_top span {
-    font-size: 250%;
+    font-size: 3vw;
     cursor: pointer;
     color: #888;
     position: fixed;
@@ -86,9 +86,51 @@ h3 {
     z-index: 100000;
 }
 
+#language_mobile_input_id_de, #language_mobile_input_id_en, #language_mobile_label_id_de, #language_mobile_label_en {
+    display: none;
+}
+
 @media(max-width: 900px) {
-    
-    /* .back_top span {
+
+    .back_top span {
+        font-size: 10vw;
+    }
+
+    .language_mobile_selector_class {
+        display: block;
+    }
+
+    .language_mobile_label_class_de {
         display: none;
-    } */
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        cursor: pointer;
+        width: 8vw;
+        height: 8vw;
+        border-radius: 4vw;
+        background-color: rgb(69, 69, 69);
+        bottom: 7vh;
+        right: 2vw;
+        font-size: 3vw;
+        font-weight: 600;
+        color: white;
+    }
+
+    .language_mobile_label_class_en {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        cursor: pointer;
+        width: 8vw;
+        height: 8vw;
+        border-radius: 4vw;
+        background-color: rgb(69, 69, 69);
+        bottom: 7vh;
+        right: 2vw;
+        font-size: 3vw;
+        font-weight: 600;
+        color: white;
+    }
 }

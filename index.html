@@ -18,8 +18,8 @@
         <link rel="stylesheet" href="footer.css">
 
         <!-- JS Dateien -->
-        <script src="header.js" defer></script>
         <script src="general_settings.js" defer></script>
+        <script src="header.js" defer></script>
         <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 
         <!-- Icons -->
@@ -41,28 +41,34 @@
 
                 <!-- Nav -->
                 <nav>
-                    <input type="radio" id="toggle_button" name="menu_control" onclick="hideArrow()">
+                    <input type="radio" id="toggle_button" name="menu_control" onclick="hideElements()">
                     <label for="toggle_button"><span class="material-symbols-outlined">menu</span></label>
-                    <input type="radio" id="close_button" name="menu_control" onclick="showArrow()" checked>
+                    <input type="radio" id="close_button" name="menu_control" onclick="showElements()" checked>
                     <label for="close_button"><span class="material-symbols-outlined">close</span></label>
                     <ul>
-                        <li class="lang-content de"><a href="#Entdecken_section" onclick="closeNav()">Entdecken</a></li>
-                        <li class="lang-content de"><a href="#Entstehungsgeschichte_section" onclick="closeNav()">Entstehungsgeschichte</a></li>
-                        <li class="lang-content de"><a href="#Service_section" onclick="closeNav()">Service</a></li>
-                        <li class="lang-content de"><a href="#Kontakt_section" onclick="closeNav()">Kontakt</a></li>
-                        <li class="lang-content en"><a href="#Entdecken_section" onclick="closeNav()">Discover</a></li>
-                        <li class="lang-content en"><a href="#Entstehungsgeschichte_section" onclick="closeNav()">Story</a></li>
-                        <li class="lang-content en"><a href="#Service_section" onclick="closeNav()">Service</a></li>
-                        <li class="lang-content en"><a href="#Kontakt_section" onclick="closeNav()">Contact</a></li>
+                        <li class="lang-content de"><a href="#Entdecken_section" onclick="closeNav(), showElements()">Entdecken</a></li>
+                        <li class="lang-content de"><a href="#Entstehungsgeschichte_section" onclick="closeNav(), showAElements()">Entstehungsgeschichte</a></li>
+                        <li class="lang-content de"><a href="#Service_section" onclick="closeNav(), showElements()">Service</a></li>
+                        <li class="lang-content de"><a href="#Kontakt_section" onclick="closeNav(), showElements()">Kontakt</a></li>
+                        <li class="lang-content en"><a href="#Entdecken_section" onclick="closeNav(), showElements()">Discover</a></li>
+                        <li class="lang-content en"><a href="#Entstehungsgeschichte_section" onclick="closeNav(), showElements()">Story</a></li>
+                        <li class="lang-content en"><a href="#Service_section" onclick="closeNav(), showElements()">Service</a></li>
+                        <li class="lang-content en"><a href="#Kontakt_section" onclick="closeNav(), showElements()">Contact</a></li>
                     </ul>
                 </nav>
 
                 <!-- Sprachauswahl -->
-                <div class="language_selector">
+                <div class="language_selector" id="language_selector">
                     <input type="radio" name="language" class="language_radio" id="de" checked>
-                    <label for="de" class="language_label" onclick="changeLanguage('de')">DE</label>
+                    <label for="de" class="language_label" onclick="changeLanguage('de')" id="de_label">DE</label>
                     <input type="radio" name="language" class="language_radio" id="en">
-                    <label for="en" class="language_label" onclick="changeLanguage('en')">EN</label>
+                    <label for="en" class="language_label" onclick="changeLanguage('en')" id="en_label">EN</label>
+                </div>
+                <div class="language_mobile_selector_class">
+                    <input type="radio" name="language_mobile_input_name" class="language_mobile_input_class" id="language_mobile_input_id_de" onclick="changeLanguage('de'), changeMobileLanguage()" checked>
+                    <label for="language_mobile_input_id_de" class="language_mobile_label_class_de" id="language_mobile_label_id_de">DE</label>
+                    <input type="radio" name="language_mobile_input_name" class="language_mobile_input_class" id="language_mobile_input_id_en" onclick="changeLanguage('en'), changeMobileLanguage()">
+                    <label for="language_mobile_input_id_en" class="language_mobile_label_class_en" id="language_mobile_label_id_en">EN</label>
                 </div>
             </div>
 
