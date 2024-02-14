@@ -1,5 +1,5 @@
 #Service_section {
-    padding: 1vw 1vw;
+    padding: 1rem 1rem;
     background: 
         url(images/Bsp_2_3.png) 
         no-repeat 
@@ -17,7 +17,7 @@
 }
 
 .Dokumente {
-    margin-bottom: 5vh;
+    margin-bottom: 3rem;
 }
 
 .Dokumente p {
@@ -25,11 +25,11 @@
     border-radius: 1em;
     padding: 1em;
     margin: 1em 0;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 
 .Dokumente p span {
-    font-size: 2vw;
+    font-size: 2rem;
 }
 
 .Dokumente a {
@@ -40,8 +40,8 @@
 .FAQ {
     display: flex;
     flex-direction: column;
-    gap: 1vw;
-    margin-bottom: 5vh;
+    gap: 1rem;
+    margin-bottom: 3rem;
 }
 
 .FAQ .tab {
@@ -82,17 +82,16 @@
 }
 
 .FAQ .tab label h4 {
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 2.5rem;
+    height: 2.5rem;
     background: var(--secondary-text-color);
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--text-color);
-    font-size: 1.25em;
     border-radius: 5px;
     margin-right: 10px;
-    font-size: 1.5vw;
+    font-size: 1.25rem;
 }
 
 .FAQ .tab input:checked ~ label h4 {
@@ -104,7 +103,7 @@
     color: rgba(255, 255, 255, 0.2);
     font-size: 8em;
     justify-content: flex-end;
-    padding: 2vw;
+    padding: 2rem;
 }
 
 .FAQ .tab label h5 {
@@ -112,7 +111,7 @@
     font-weight: 600;
     color: var(--text-color);
     z-index: 10;
-    font-size: 1vw;
+    font-size: 1.25rem;
 }
 
 /* .FAQ .tab input:checked ~ label h5{
@@ -138,4 +137,29 @@
     padding: 10px 0;
     color: var(--text-color);
     z-index: 10;
+}
+
+@media(max-width: 900px) {
+
+    .Dokumente p {
+        font-size: 1rem;
+    }
+
+    .Dokumente p span {
+        font-size: 1rem;
+    }
+
+    .FAQ .tab {
+        padding: 0 10px 20px;
+    }
+
+    .FAQ .tab label h4 {
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 0.75rem;
+    }
+
+    .FAQ .tab label h5 {
+        font-size: 0.75rem;
+    }
 }

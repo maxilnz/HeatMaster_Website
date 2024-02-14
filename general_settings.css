@@ -51,16 +51,16 @@ h1 {
 }
 
 h2 {
-    font-size: 3vw;
+    font-size: 3rem;
     font-weight: 600;
     line-height: 100%;
     color: var(--text-color);
-    padding-top: 5vh;
+    padding-top: 3vh;
     margin-bottom: 5vh;
 }
 
 h3 {
-    font-size: 2vw;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 100%;
     color: var(--primary-color);
@@ -72,7 +72,7 @@ h3 {
 }
 
 .TechnischeDaten_heading {
-    font-size: 3vw;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 
@@ -99,6 +99,21 @@ h3 {
 }
 
 @media(max-width: 900px) {
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .TechnischeDaten_heading {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
 
     .back_top span {
         font-size: 10vw;
