@@ -103,11 +103,13 @@
     right: -0.5em;
 }
 
-@media(max-width: 900px) {
-    
+@media(max-width: 400px) {
     .Entstehungsgeschichte_heading {
         font-size: 1.25rem;
     }
+}
+
+@media(max-width: 900px) {
 
     .Entstehungsgeschichte_container p {
         font-size: 1rem;

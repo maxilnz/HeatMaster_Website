@@ -251,6 +251,10 @@ label[for="close_button"] span {
     #close_button:checked ~ label[for="close_button"] {
         display: none;
     }
+
+    .arrow_down a span {
+        font-size: 3rem;
+    }
 }
 
 .slider {
@@ -321,6 +325,6 @@ label[for="close_button"] span {
 
 .arrow_down span {
     color: var(--main-brand-color);
-    font-size: 5vw;
+    font-size: 5rem;
     font-weight: 800;
 }
