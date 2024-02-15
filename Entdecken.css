@@ -29,31 +29,56 @@ iframe {
 }
 
 .Technische_Daten_container {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 30rem;
+    width: 75vw;
     height: 100vh;
-    padding: 5vh;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 5rem;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    grid-template-areas: 
+    "eins eins zwei"
+    "drei vier zwei"
+    "fuenf vier sechs";
 }
 
-.Technische_Daten_container ul {
-    display: flex;
-    flex-direction: column;
-    gap: 3vh;
+.item_1 {
+    grid-area: eins;
+    background-color: blue;
 }
 
-.Technische_Daten_container li {
-    font-size: 2rem;
-    color: white;
+.item_2 {
+    grid-area: zwei;
+    background-color: blue;
+}
+
+.item_3 {
+    grid-area: drei;
+    background-color: blue;
+}
+
+.item_4 {
+    grid-area: vier;
+    background-color: blue;
+}
+
+.item_5 {
+    grid-area: fuenf;
+    background-color: blue;
+}
+
+.item_6 {
+    grid-area: sechs;
+    background-color: blue;
 }
 
 @media(max-width: 900px) {
 
     .Technische_Daten_container {
         width: 100%;
-    }
-
-    .Technische_Daten_container li {
-        font-size: 1rem;
-        text-align: center;
     }
 }
