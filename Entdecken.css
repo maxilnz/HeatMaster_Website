@@ -20,65 +20,103 @@ iframe {
     height: 85vh;
 }
 
-.Technische_Daten {
-    height: 100vh;
+#Technische_Daten_section {
     background-image: url(images/Bsp_2_3.png);
     background-size: cover;
-    background-position: left;
     background-repeat: no-repeat;
 }
 
 .Technische_Daten_container {
-    width: 75vw;
     height: 100vh;
     max-width: 90%;
+    width: 75vw;
     margin: 0 auto;
-    padding: 5rem;
-    justify-content: center;
-    align-content: center;
+}
+
+.Technische_Daten_container .Technische_Daten_box_container {
+    height: 100vh;
+    padding: 5vh 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 1rem;
-    grid-template-areas: 
-    "eins eins zwei"
-    "drei vier zwei"
-    "fuenf vier sechs";
+    gap: 15px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.item_1 {
-    grid-area: eins;
-    background-color: blue;
+.Technische_Daten_container .Technische_Daten_box_container .box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.item_2 {
-    grid-area: zwei;
-    background-color: blue;
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    border-radius: 1em;
 }
 
-.item_3 {
-    grid-area: drei;
-    background-color: blue;
+.front_card:hover {
+    transform: scale(1.02);
+    letter-spacing: 1px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    cursor: pointer;
 }
 
-.item_4 {
-    grid-area: vier;
-    background-color: blue;
+.back_card:hover {
+    cursor: pointer;
 }
 
-.item_5 {
-    grid-area: fuenf;
-    background-color: blue;
+.front_card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url(images/question-mark-1872665_640.jpg);
+    color: #333;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.item_6 {
-    grid-area: sechs;
-    background-color: blue;
+.back_card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #fafafa;
+    color: #333;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1200px) {
+
+    .Technische_Daten_container .Technische_Daten_box_container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width: 800px) {
 
     .Technische_Daten_container {
-        width: 100%;
+        max-width: 100%;
+        width: 90vw;
+    }
+}
+
+@media(max-width: 350px) {
+
+    .Technische_Daten_container .Technische_Daten_box_container {
+        gap: 5px;
     }
 }

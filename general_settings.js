@@ -21,3 +21,10 @@ function changeMobileLanguage() {
         document.getElementById("language_mobile_label_id_de").style.display = "flex"
     }
 }
+
+function openLink(url, id) {
+    var link = document.getElementById(id);
+    if (link) {
+        window.open(url, link.target);
+    }
+}

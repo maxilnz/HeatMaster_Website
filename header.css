@@ -19,6 +19,7 @@ header {
 
 .logo {
     width: 8vw;
+    border-radius: 250px;
 }
 
 .subheading {
@@ -86,7 +87,22 @@ nav a:hover::after {
     display: none;
 }
 
-.language_label {
+.language_label_de {
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid black;
+    transition: background-color 0.5s;
+    height: 3vw;
+    width: 3vw;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em 0 0 1em;
+    font-weight: 700;
+}
+
+.language_label_en {
     cursor: pointer;
     padding: 10px;
     border: 2px solid black;
@@ -97,14 +113,26 @@ nav a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 0 1em 1em 0;
+    font-weight: 700;
 }
 
-input[type="radio"]:checked+.language_label {
+input[type="radio"]:checked+.language_label_de {
     background-color: black;
     color: white;
 }
 
-input[type="radio"]:not(checked)+.language_label {
+input[type="radio"]:checked+.language_label_en {
+    background-color: black;
+    color: white;
+}
+
+input[type="radio"]:not(checked)+.language_label_en {
+    background-color: white;
+    color: black;
+}
+
+input[type="radio"]:not(checked)+.language_label_de {
     background-color: white;
     color: black;
 }

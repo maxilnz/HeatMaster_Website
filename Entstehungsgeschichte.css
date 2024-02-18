@@ -146,4 +146,9 @@
         left: 50%;
         transform: translateX(-50%);
     }
+
+    .Entstehungsgeschichte_container {
+        max-width: 100%;
+        width: 90vw;
+    }
 }

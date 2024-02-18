@@ -20,6 +20,7 @@
         <!-- JS Dateien -->
         <script src="general_settings.js" defer></script>
         <script src="header.js" defer></script>
+        <script src="Entdecken.js" defer></script>
         <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 
         <!-- Icons -->
@@ -60,9 +61,9 @@
                 <!-- Sprachauswahl -->
                 <div class="language_selector" id="language_selector">
                     <input type="radio" name="language" class="language_radio" id="de" checked>
-                    <label for="de" class="language_label" onclick="changeLanguage('de')" id="de_label">DE</label>
+                    <label for="de" class="language_label_de" onclick="changeLanguage('de')" id="de_label">DE</label>
                     <input type="radio" name="language" class="language_radio" id="en">
-                    <label for="en" class="language_label" onclick="changeLanguage('en')" id="en_label">EN</label>
+                    <label for="en" class="language_label_en" onclick="changeLanguage('en')" id="en_label">EN</label>
                 </div>
                 <div class="language_mobile_selector_class">
                     <input type="radio" name="language_mobile_input_name" class="language_mobile_input_class" id="language_mobile_input_id_de" onclick="changeLanguage('de'), changeMobileLanguage()" checked>
@@ -98,16 +99,111 @@
                         </div>
                     </div>
                 </section>
-                <div class="Technische_Daten">
+                <section id="Technische_Daten_section">
                     <div class="Technische_Daten_container">
-                        <div class="item_1">1</div>
-                        <div class="item_2">2</div>
-                        <div class="item_3">3</div>
-                        <div class="item_4">4</div>
-                        <div class="item_5">5</div>
-                        <div class="item_6">6</div>
+                        <div class="Technische_Daten_box_container">
+                            <div class="box">
+                                <div class="card" id="card">
+                                    <div class="front_card" id="front_card" onclick="rotateCard(this)">
+                                        <p class="lang-content de grid_heading">Brenner</p>
+                                        <p class="lang-content en grid_heading">Burner</p>
+                                    </div>
+                                    <div class="back_card" id="back_card" onclick="rotateCardback(this)">
+                                        back
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="card">
+                                    <div class="front_card" onclick="rotateCard(this)">
+                                        <p class="lang-content de grid_heading">Gehäuse</p>
+                                        <p class="lang-content en grid_heading">Case</p>
+                                    </div>
+                                    <div class="back_card" onclick="rotateCardback(this)">
+                                        back
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="card">
+                                    <div class="front_card" onclick="rotateCard(this)">
+                                        <p class="lang-content de grid_heading">Steak-Modus</p>
+                                        <p class="lang-content en grid_heading">Steak mode</p>
+                                    </div>
+                                    <div class="back_card" onclick="rotateCardback(this)">
+                                        back
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="card">
+                                    <div class="front_card" onclick="rotateCard(this)">
+                                        <p class="lang-content de grid_heading">Pizza-Modus</p>
+                                        <p class="lang-content en grid_heading">Pizza mode</p>
+                                    </div>
+                                    <div class="back_card" onclick="rotateCardback(this)">
+                                        back
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="card">
+                                    <div class="front_card" onclick="rotateCard(this)">
+                                        <p class="lang-content de grid_heading">Transport</p>
+                                        <p class="lang-content en grid_heading">Transport</p>
+                                    </div>
+                                    <div class="back_card" onclick="rotateCardback(this)">
+                                        back
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="card">
+                                    <div class="front_card" onclick="rotateCard(this)">
+                                        <p class="lang-content de grid_heading">Weitere <br> Features</p>
+                                        <p class="lang-content en grid_heading">More <br> features</p>
+                                    </div>
+                                    <div class="back_card" onclick="rotateCardback(this)">
+                                        back
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="card">
+                                    <div class="front_card" onclick="rotateCard(this)">
+                                        <p class="lang-content de grid_heading">Test</p>
+                                        <p class="lang-content en grid_heading">Test</p>
+                                    </div>
+                                    <div class="back_card" onclick="rotateCardback(this)">
+                                        back
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="card">
+                                    <div class="front_card" onclick="rotateCard(this)">
+                                        <p class="lang-content de grid_heading">Test</p>
+                                        <p class="lang-content en grid_heading">Test</p>
+                                    </div>
+                                    <div class="back_card" onclick="rotateCardback(this)">
+                                        back
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="card">
+                                    <div class="front_card" onclick="rotateCard(this)">
+                                        <p class="lang-content de grid_heading">Test</p>
+                                        <p class="lang-content en grid_heading">Test</p>
+                                    </div>
+                                    <div class="back_card" onclick="rotateCardback(this)">
+                                        back
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
             </section>
             <section id="Entstehungsgeschichte_section">
                 <div class="Entstehungsgeschichte_container">
@@ -165,10 +261,17 @@
                     <div class="Dokumente">
                         <h3 class="lang-content de">Dokumente</h3>
                         <h3 class="lang-content en">Documents</h3>
-                        <p class="lang-content de"> <a target="_blank" href="pdfs/Varianten_Skizzen.pdf" id="Bedienungsanleitung_de"> <span class="material-symbols-outlined">file_open</span> Bedienungsanleitung (138 KB)</a></p>
-                        <p class="lang-content en"> <a target="_blank" href="pdfs/Varianten_Skizzen.pdf" id="Bedienungsanleitung_en"> <span class="material-symbols-outlined">file_open</span> Manual (138 KB)</a></p>
-                        <p class="lang-content de"> <a target="_blank" href="pdfs/Varianten_Skizzen.pdf" id="Datenblatt_de"> <span class="material-symbols-outlined">file_open</span> Datenblatt (138 KB)</a></p>
-                        <p class="lang-content en"> <a target="_blank" href="pdfs/Varianten_Skizzen.pdf" id="Datenblatt_en"> <span class="material-symbols-outlined">file_open</span> Spec sheet (138 KB)</a></p>
+                        <a target="_blank" href="pdfs/Varianten_Skizzen.pdf" id="Bedienungsanleitung_de"></a>
+                        <p class="lang-content de" onclick="openLink('pdfs/Varianten_Skizzen.pdf', 'Bedienungsanleitung_de')"> <span class="material-symbols-outlined">file_open</span> Bedienungsanleitung (138 KB)</p>
+
+                        <a target="_blank" href="pdfs/Varianten_Skizzen.pdf" id="Bedienungsanleitung_en"></a>
+                        <p class="lang-content en" onclick="openLink('pdfs/Varianten_Skizzen.pdf', 'Bedienungsanleitung_en')"> <span class="material-symbols-outlined">file_open</span> Manual (138 KB)</p>
+
+                        <a target="_blank" href="pdfs/Varianten_Skizzen.pdf" id="Datenblatt_de"></a>
+                        <p class="lang-content de" onclick="openLink('pdfs/Varianten_Skizzen.pdf', 'Datenblatt_de')">  <span class="material-symbols-outlined">file_open</span> Datenblatt (138 KB)</p>
+
+                        <a target="_blank" href="pdfs/Varianten_Skizzen.pdf" id="Datenblatt_en"></a>
+                        <p class="lang-content en" onclick="openLink('pdfs/Varianten_Skizzen.pdf', 'Datenblatt_en')"> <span class="material-symbols-outlined">file_open</span> Spec sheet (138 KB)</p>
                     </div>
                     <div class="FAQ">
                         <h3>FAQ</h3>

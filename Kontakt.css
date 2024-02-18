@@ -28,7 +28,8 @@ form {
     height: 2rem;
     border: 1px solid #0a0a23;
     font-size: 1.25rem;
-    padding-left: 5px;
+    padding-left: 10px;
+    border-radius: 1em;
   }
 
 .Kontakt_container textarea {
@@ -43,6 +44,12 @@ input[type="submit"] {
     font-size: 1.5rem;
 }
 
+input[type="submit"]:hover {
+    letter-spacing: 1px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    transform: scale(1.02);
+}
+
 @media(max-width: 900px) {
 
     .Kontakt_container label {
@@ -51,5 +58,16 @@ input[type="submit"] {
 
     .Kontakt_container input, textarea {
         font-size: 0.75rem;
+    }
+
+    .Kontakt_container {
+        max-width: 100%;
+        width: 90vw;
+    }
+}
+
+@media(max-width: 400px) {
+    form {
+        width: 90vw;
     }
 }
