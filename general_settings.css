@@ -67,6 +67,10 @@ h3 {
     margin-bottom: 5vh;
 }
 
+.service_subheadings {
+    margin-bottom: 1rem;
+}
+
 .Entstehungsgeschichte_heading, .Service_heading, .Impressum_heading {
     color: white;
 }
@@ -109,6 +113,11 @@ h3 {
     h3 {
         font-size: 1rem;
         text-align: center;
+    }
+
+    .service_subheadings {
+        font-size: 1.5rem;
+        margin-bottom: none;
     }
 
     .back_top span {

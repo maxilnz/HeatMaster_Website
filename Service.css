@@ -149,6 +149,10 @@
 
 @media(max-width: 900px) {
 
+    .Dokumente {
+        margin-bottom: 1rem;
+    }
+
     .Dokumente p {
         font-size: 1rem;
     }

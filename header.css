@@ -196,6 +196,11 @@ label[for="close_button"] span {
     .main_heading {
         margin: 0 auto;
         text-align: center;
+        font-weight: 500;
+    }
+
+    h1 {
+        font-weight: 500;
     }
 
     nav label {
@@ -235,7 +240,7 @@ label[for="close_button"] span {
     }
 
     nav a {
-        font-size: 4vw;
+        font-size: 1rem;
         color: black;
     }
 
