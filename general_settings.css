@@ -126,6 +126,7 @@ h3 {
 
     .language_mobile_selector_class {
         display: block;
+        z-index: 10000;
     }
 
     .language_mobile_label_class_de {

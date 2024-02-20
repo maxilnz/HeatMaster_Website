@@ -240,7 +240,7 @@ label[for="close_button"] span {
     }
 
     nav a {
-        font-size: 1rem;
+        font-size: 2rem;
         color: black;
     }
 
@@ -287,6 +287,20 @@ label[for="close_button"] span {
 
     .arrow_down a span {
         font-size: 3rem;
+    }
+}
+
+@media(max-width: 450px) {
+
+    nav a {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 350px) {
+
+    nav a {
+        font-size: 1rem;
     }
 }
 
