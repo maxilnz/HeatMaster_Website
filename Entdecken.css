@@ -21,7 +21,10 @@ iframe {
 }
 
 #Technische_Daten_section {
-    background-image: url(images/Bsp_2_3.png);
+    background: 
+        url(images/Bsp_2_3.png) 
+        no-repeat 
+        center fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
