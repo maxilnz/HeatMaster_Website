@@ -13,11 +13,7 @@ if(isset($_POST['submit'])){
     $headers2 = "Von (From):" . $to;
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2);
-    //header('Location: /#Kontakt_section');
+    
     echo "<script>alert('Ihre Nachricht wurde erfolgreich versendet.'); window.location = '/#Kontakt_section';</script>";
-    //echo "<script>
-        //document.getElementById('form_de').reset();
-        //alert('Ihre Nachricht wurde erfolgreich versendet.');
-    //</script>";
     }
 ?>
