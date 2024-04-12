@@ -5,7 +5,7 @@ if(isset($_POST['submit'])){
     $name = $_POST['name'];
     $subject = "Kontaktanfrage";
     $subject2 = "Kopie Ihrer Kontaktanfrage (Copy of your contact request)";
-    $message = $name . " hat geschrieben:" . "\n\n" . $_POST['message'];
+    $message = $name . " (" . $from . ") hat geschrieben:" . "\n\n" . $_POST['message'];
     $message2 = "Hier ist eine Kopie Ihrer Nachricht (Here is a copy of your message) " . "\n\n" . $_POST['message'];
     $message3 = "Nachricht gesendet (message sent)";
 

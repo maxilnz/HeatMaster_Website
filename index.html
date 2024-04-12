@@ -294,7 +294,7 @@
                     <div class="FAQ">
                         <h3 class="service_subheadings">FAQ</h3>
                         <div class="tab">
-                            <input type="radio" name="tab" id="tab1">
+                            <input type="checkbox" name="tab" id="tab1">
                             <label for="tab1">
                                 <h4>01</h4>
                                 <h5 class="lang-content de">Was macht den HeatMaster so besonders?</h5>
@@ -307,7 +307,7 @@
                             </div>
                         </div>
                         <div class="tab">
-                            <input type="radio" name="tab" id="tab2">
+                            <input type="checkbox" name="tab" id="tab2">
                             <label for="tab2">
                                 <h4>02</h4>
                                 <h5 class="lang-content de">Kann man den HeatMaster erwerben?</h5>
@@ -320,7 +320,7 @@
                             </div>
                         </div>
                         <div class="tab">
-                            <input type="radio" name="tab" id="tab3">
+                            <input type="checkbox" name="tab" id="tab3">
                             <label for="tab3">
                                 <h4>03</h4>
                                 <h5 class="lang-content de">Wie reinigt man den HeatMaster richtig?</h5>
@@ -333,7 +333,7 @@
                             </div>
                         </div>
                         <div class="tab">
-                            <input type="radio" name="tab" id="tab4">
+                            <input type="checkbox" name="tab" id="tab4">
                             <label for="tab4">
                                 <h4>04</h4>
                                 <h5 class="lang-content de">Mit welchem Gas wird der HeatMaster betrieben?</h5>
@@ -346,7 +346,7 @@
                             </div>
                         </div>
                         <div class="tab">
-                            <input type="radio" name="tab" id="tab5">
+                            <input type="checkbox" name="tab" id="tab5">
                             <label for="tab5">
                                 <h4>05</h4>
                                 <h5 class="lang-content de">Was ist beim Wechseln des Modus zu beachten?</h5>
@@ -368,14 +368,14 @@
                     <form class="lang-content de" action="Kontakt.php" method="post" enctype="application/x-www-form-urlencoded" id="form_de">
                         <label id="name-label">Name<input name="name" id="name" type="text" placeholder="Tragen Sie Ihren Namen ein" required /></label>
                         <label id="email-label">E-Mail-Adresse<input name="email" id="email" type="email" placeholder="Tragen Sie Ihre E-Mail-Adresse ein" required /></label>
-                        <label id="textarea-label">Ihre Anfrage<textarea name="message" id="textarea" type="textarea" required></textarea></label>
-                        <input id="submit" name="submit" type="submit" value="Senden" onclick="resetForm()"/>
+                        <label id="textarea-label">Ihre Anfrage<textarea name="message" id="textarea" type="textarea" placeholder="Teilen Sie uns hier ihr Anliegen mit" required></textarea></label>
+                        <input id="submit" name="submit" type="submit" value="Senden"/>
                     </form>
                     <form class="lang-content en" action="Kontakt.php" method="post" enctype="application/x-www-form-urlencoded" id="form_en">
                         <label id="name-label_en">Name<input name="name" id="name_en" type="text" placeholder="Enter your name" required /></label>
                         <label id="email-label_en">Email address<input name="email" id="email_en" type="email" placeholder="Enter your email address" required /></label>
-                        <label id="textarea-label_en">Your request<textarea name="message" id="textarea_en" type="textarea" required></textarea></label>
-                        <input id="submit_en" name="submit" type="submit" value="Send" onclick="resetForm()"/>
+                        <label id="textarea-label_en">Your request<textarea name="message" id="textarea_en" type="textarea" placeholder="Tell us your request here" required></textarea></label>
+                        <input id="submit_en" name="submit" type="submit" value="Send"/>
                     </form>
                 </div>
             </section>
