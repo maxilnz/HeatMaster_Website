@@ -22,10 +22,10 @@ iframe {
 
 #Technische_Daten_section {
     background: 
-        url(images/Explosion_big.png) 
+        url(images/Folie1.PNG) 
         no-repeat 
         center fixed;
-    background-size: cover;
+    background-size: contain;
 }
 
 .Technische_Daten_container {
@@ -269,6 +269,14 @@ iframe {
 
 @media(max-width: 800px) {
 
+    #Technische_Daten_section {
+        background: 
+            url(images/Folie1.PNG) 
+            no-repeat 
+            center fixed;
+        background-size: 150%;
+    }
+
     .Technische_Daten_container {
         max-width: 100%;
         width: 90vw;
@@ -281,6 +289,14 @@ iframe {
 }
 
 @media(max-width: 350px) {
+
+    #Technische_Daten_section {
+        background: 
+            url(images/Folie1.PNG) 
+            no-repeat 
+            center fixed;
+        background-size: 250%;
+    }
 
     .Technische_Daten_container .Technische_Daten_box_container {
         gap: 5px;

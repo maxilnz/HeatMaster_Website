@@ -1,10 +1,10 @@
 #Entstehungsgeschichte_section {
     padding: 1rem 1rem;
     background: 
-        url(images/Folie1.PNG) rgba(0, 0, 0, 0.75)
+        url(images/Seite_V3.png) rgba(0, 0, 0, 0.75)
         no-repeat 
         center fixed;
-    background-size: 110%;
+    background-size: cover;
     background-blend-mode: overlay;
     color: var(--primary-color);
     display: flex;
@@ -110,24 +110,12 @@
 
 @media(max-width: 400px) {
 
-    #Entstehungsgeschichte_section {
-        background: 
-        url(images/Folie1.PNG) rgba(0, 0, 0, 0.75)
-        no-repeat 
-        center fixed;
-        background-size: 600%;
-    }
-
     .Entstehungsgeschichte_heading {
         font-size: 1.25rem;
     }
 }
 
 @media(max-width: 900px) {
-
-    #Entstehungsgeschichte_section {
-        background-size: 150%;
-    }
 
     .Entstehungsgeschichte_container p {
         font-size: 1rem;
