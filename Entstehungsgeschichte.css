@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .Entstehungsgeschichte_container {
@@ -27,6 +28,10 @@
     font-weight: 600;
     font-size: 1.5rem;
     text-align: center;
+}
+
+.Entstehungsgeschichte_container p a {
+    color: var(--primary-color);
 }
 
 .timeline {

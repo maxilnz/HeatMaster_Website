@@ -65,7 +65,7 @@ nav ul li {
 
 nav a{
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--text-color);
     font-weight: 600;
     font-size: 1.25vw;
     position: relative;
@@ -171,7 +171,7 @@ label[for="toggle_button"] {
 
 label[for="toggle_button"] span {
     font-size: 7vw;
-    color: white;
+    color: black;
     cursor: pointer;
 }
 
@@ -337,15 +337,16 @@ label[for="close_button"] span {
 .slide {
     flex: 1;
     height: 100vh;
-    background-size: cover;
+    background-size: cover; /* vorher cover */
+    background-repeat: no-repeat;
     background-position: center;
   }
 
-  #slide1 { background-image: url('images/Bsp_2_1.png'); }
-  #slide2 { background-image: url('images/Bsp_2_2.png'); }
-  #slide3 { background-image: url('images/Bsp_2_3.png'); }
-  #slide4 { background-image: url('images/Bsp_2_4.png'); }
-  #slide5 { background-image: url('images/Bsp_2_1.png'); }
+  #slide1 { background-image: url('images/Front_Slider.png'); }
+  #slide2 { background-image: url('images/Front_nah_Slider.png'); }
+  #slide3 { background-image: url('images/Hinten_Slider.png'); }
+  #slide4 { background-image: url('images/Grillrost_high.png'); }
+  #slide5 { background-image: url('images/Front_Slider.png'); }
   
 @keyframes slideAnimation {
     0% {

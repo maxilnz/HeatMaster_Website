@@ -1,7 +1,7 @@
 #Service_section {
     padding: 1rem 1rem;
     background: 
-        url(images/Bsp_2_3.png) 
+        url(images/Front_schwarz_V3_2.png) 
         no-repeat 
         center fixed;
     background-size: cover;
@@ -21,8 +21,9 @@
 }
 
 .Dokumente p {
-    color: var(--primary-color);
-    border: 2px solid #888;
+    color: var(--text-color);
+    background: var(--primary-color);
+    /* border: 2px solid #888; */
     border-radius: 1em;
     padding: 1em;
     margin: 1em 0;
@@ -38,6 +39,7 @@
 
 .Dokumente p span {
     font-size: 2rem;
+    color: var(--secondary-text-color);
 }
 
 .FAQ {
@@ -122,13 +124,13 @@
     font-size: 1.25rem;
 }
 
-/* .FAQ .tab input:checked ~ label h5{
+.FAQ .tab input:checked ~ label h5{
     background: #fff;
     padding: 2px 10px;
     color: var(--text-color);
     border-radius: 2px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-} */
+} 
 
 .FAQ .tab .answer {
     max-height: 0;
@@ -143,8 +145,12 @@
 .FAQ .tab .answer p {
     position: relative;
     padding: 10px 0;
-    color: var(--text-color);
+    color: var(--primary-color);
     z-index: 10;
+}
+
+.FAQ .tab .answer p a {
+    color: var(--primary-color);
 }
 
 @media(max-width: 900px) {

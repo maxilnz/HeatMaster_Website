@@ -6,7 +6,8 @@
     --primary-color: #EEEEEE;
     --secondary-color: #B3B4B6;
     --text-color: #000;
-    --secondary-text-color: #dc5f00;
+    /* --secondary-text-color: #dc5f00; */
+    --secondary-text-color: #0A75CF;
     height: 100%;
     width: 100%;
 }
@@ -47,7 +48,7 @@ h1 {
 }
 
 .subheading {
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 h2 {
@@ -78,7 +79,7 @@ h3 {
 .grid_heading {
     font-size: 2rem;
     font-weight: 400;
-    color: var(--primary-color)
+    /* color: var(--text-color) */
 }
 
 .back_top {

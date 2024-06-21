@@ -35,6 +35,7 @@ form {
 
 .Kontakt_container textarea {
     height: 8rem;
+    resize: none;
 }
 
 input[type="submit"] {
